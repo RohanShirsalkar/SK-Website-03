@@ -61,9 +61,9 @@ const HeroSlider = ({ slides = [] }) => {
                 <p className="text-sm md:text-base mb-8 text-gray-200">
                   {slide.description}
                 </p>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium transition-colors duration-300">
+                {/* <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium transition-colors duration-300">
                   {slide.ctaText}
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

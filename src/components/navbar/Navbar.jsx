@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <nav className="">
+    <nav className="border-b shadow border-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -26,38 +27,57 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="py-2 px-3 hover:bg-gray-200 rounded-md">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-2 px-3 text-blue-500 font-semibold"
+                  : "py-2 px-3 hover:bg-gray-200 rounded-md"
+              }
+            >
               Home
-            </a>
-            <a href="#" className="py-2 px-3 hover:bg-gray-200 rounded-md">
+            </NavLink>
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-2 px-3 text-blue-500 font-semibold"
+                  : "py-2 px-3 hover:bg-gray-200 rounded-md"
+              }
+            >
               About
-            </a>
-            <div className="relative">
-              <button
-                className="py-2 px-3 hover:bg-gray-200 rounded-md flex items-center"
-                onClick={toggleDropdown}
-              >
-                Services
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
+            </NavLink>
+            <NavLink
+              to="/corporate-compliance"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-2 px-3 text-blue-500 font-semibold"
+                  : "py-2 px-3 hover:bg-gray-200 rounded-md"
+              }
+            >
+              Corporate Compliance
+            </NavLink>
+            <NavLink
+              to="/q&ehs"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-2 px-3 text-blue-500 font-semibold"
+                  : "py-2 px-3 hover:bg-gray-200 rounded-md"
+              }
+            >
+              Q&EHS
+            </NavLink>
 
-              {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-                    Service 1
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-                    Service 2
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-200">
-                    Service 3
-                  </a>
-                </div>
-              )}
-            </div>
-            <a href="#" className="py-2 px-3 hover:bg-gray-200 rounded-md">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-2 px-3 text-blue-500 font-semibold"
+                  : "py-2 px-3 hover:bg-gray-200 rounded-md"
+              }
+            >
               Contact
-            </a>
+            </NavLink>
           </div>
 
           {/* Mobile menu button */}
@@ -92,7 +112,77 @@ const Navbar = () => {
             >
               About
             </a>
-            <button
+
+            <a
+              href="#"
+              className="block px-3 py-2 hover:bg-gray-200 rounded-md"
+            >
+              Contact
+            </a>
+            <a
+              href="#"
+              className="block px-3 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-center mt-4"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
+
+{
+  /* <div className="relative">
+              <button
+                className="py-2 px-3 hover:bg-gray-200 rounded-md flex items-center"
+                onClick={toggleDropdown}
+              >
+                Services
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white z-20 border border-gray-200">
+                  <NavLink
+                    to="/services/service1"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block px-4 py-2 text-blue-500 text-white"
+                        : "block px-4 py-2 hover:bg-gray-200"
+                    }
+                  >
+                    Service 1
+                  </NavLink>
+                  <NavLink
+                    to="/services/service2"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block px-4 py-2 bg-blue-500 text-white"
+                        : "block px-4 py-2 hover:bg-gray-200"
+                    }
+                  >
+                    Service 2
+                  </NavLink>
+                  <NavLink
+                    to="/services/service3"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "block px-4 py-2 bg-blue-500 text-white"
+                        : "block px-4 py-2 hover:bg-gray-200"
+                    }
+                  >
+                    Service 3
+                  </NavLink>
+                </div>
+              )}
+            </div> */
+}
+
+{
+  /* <button
               className="flex justify-between items-center w-full px-3 py-2 hover:bg-gray-200 rounded-md"
               onClick={toggleDropdown}
             >
@@ -121,24 +211,5 @@ const Navbar = () => {
                   Service 3
                 </a>
               </div>
-            )}
-            <a
-              href="#"
-              className="block px-3 py-2 hover:bg-gray-200 rounded-md"
-            >
-              Contact
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-center mt-4"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-      )}
-    </nav>
-  );
-};
-
-export default Navbar;
+            )} */
+}
