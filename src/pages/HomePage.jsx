@@ -4,6 +4,8 @@ import OurSolutionsSlider from "../components/OurSolutionsSlider";
 import HeroSlider from "../components/HeroSlider";
 import SustainabilityCard from "../components/SustainabilityCard";
 import ClientsSection from "../components/Clients";
+import WhyChoseUs from "../components/WhyChoseUs";
+
 
 const homePageSlides = [
   {
@@ -42,6 +44,7 @@ const HomePage = () => {
       <OurSolutionsSlider />
       <ClientsSection/>
       <SustainabilityCard />
+      <WhyChoseUs />
       <CTAForm />
     </div>
   );

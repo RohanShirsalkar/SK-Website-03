@@ -2,7 +2,7 @@ import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-800 text-white">
       {/* Main Footer Content */}
       <div className="px-4 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
         {/* Download Brochure Section */}
@@ -34,7 +34,8 @@ const Footer = () => {
               </svg>
             </div>
             <p className="text-sm">
-            Veerabhadreshwara Nagar, Opp. APMC, Vijayapura Road, Basavan Bagewadi,
+              Veerabhadreshwara Nagar, Opp. APMC, Vijayapura Road, Basavan
+              Bagewadi,
               <br />
               Vijayapura - 586 203 India.
             </p>
@@ -79,7 +80,7 @@ const Footer = () => {
               </svg>
             </div>
             <p className="text-sm">
-            Veerabhadreshwara Nagar, Opp. APMC, Vijayapura Road, 
+              Veerabhadreshwara Nagar, Opp. APMC, Vijayapura Road,
               <br />
               Basavan Bagewadi, Vijayapura - 586 203, India.
             </p>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 // import "../styles/custom.css";
 
 const SustainabilityCard = () => {
@@ -39,6 +41,7 @@ const SustainabilityCard = () => {
   const headingStyle = {
     color: "#132577",
     fontWeight: 700,
+    fontSize: "1.5rem",
   };
 
   const lineStyle = {
@@ -81,9 +84,9 @@ const SustainabilityCard = () => {
             long-term prosperity, embracing ESG not merely as a strategic
             decision but as a moral responsibility.
           </p>
-          <a href="learnSus.html" style={buttonStyle}>
+          <Link to="corporate-compliance" style={buttonStyle}>
             Learn More
-          </a>
+          </Link>
         </div>
         <div style={imageContainerStyle}>
           <img
@@ -108,9 +111,9 @@ const SustainabilityCard = () => {
             With survey-backed operations and transparent reporting, we ensure
             reliable, safe, and seamless delivery—every time.
           </p>
-          <a href="learnSus.html" style={buttonStyle}>
+          <Link to="q&ehs" style={buttonStyle}>
             Learn More
-          </a>
+          </Link>
         </div>
       </section>
     </div>
