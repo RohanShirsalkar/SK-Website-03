@@ -9,8 +9,8 @@ const HomePage = () => {
     <div>
       <HeroSlider />
       <OurSolutionsSlider />
-      <CTAForm />
       <SustainabilityCard />
+      <CTAForm />
     </div>
   );
 };
