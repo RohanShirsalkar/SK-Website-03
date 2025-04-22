@@ -32,7 +32,7 @@ const CTAForm = () => {
           {/* Image Section - Now on left */}
           <div className="w-full md:w-1/2">
             <img
-              src="/api/placeholder/600/700"
+              src="start-the-conversation.webp"
               alt="Business professional"
               className="w-full h-auto object-cover"
             />
