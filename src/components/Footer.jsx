@@ -34,9 +34,9 @@ const Footer = () => {
               </svg>
             </div>
             <p className="text-sm">
-              NTC Tower, No.97 (Old No.47), Linghi Chetty Street,
+            Veerabhadreshwara Nagar, Opp. APMC, Vijayapura Road, Basavan Bagewadi,
               <br />
-              Chennai - 600 001, Tamil Nadu, India.
+              Vijayapura - 586 203 India.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
             </div>
-            <p className="text-sm">+91 44 6656 5656</p>
+            <p className="text-sm">+91 8073978410</p>
           </div>
 
           <div className="flex items-center">
@@ -60,7 +60,7 @@ const Footer = () => {
               href="mailto:enquiry@ntcgroup.in"
               className="text-sm hover:text-blue-400 transition-colors"
             >
-              enquiry@ntcgroup.in
+              SKRoadlines060@gmail.com
             </a>
           </div>
         </div>
@@ -79,9 +79,9 @@ const Footer = () => {
               </svg>
             </div>
             <p className="text-sm">
-              No.9, 8th Floor, Club House Road, Anna Salai,
+            Veerabhadreshwara Nagar, Opp. APMC, Vijayapura Road, 
               <br />
-              Chennai - 600 002, Tamil Nadu, India.
+              Basavan Bagewadi, Vijayapura - 586 203, India.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ const Footer = () => {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
             </div>
-            <p className="text-sm">+91 44 6688 8777</p>
+            <p className="text-sm">+91 8073978410</p>
           </div>
 
           <div className="flex items-center">
@@ -105,7 +105,7 @@ const Footer = () => {
               href="mailto:enquiry@ntcgroup.in"
               className="text-sm hover:text-blue-400 transition-colors"
             >
-              enquiry@ntcgroup.in
+              SKRoadlines060@gmail.com
             </a>
           </div>
         </div>
