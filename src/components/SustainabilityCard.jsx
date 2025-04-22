@@ -87,7 +87,7 @@ const SustainabilityCard = () => {
         </div>
         <div style={imageContainerStyle}>
           <img
-            src="https://images.unsplash.com/photo-1615392478881-f72fcdbd3c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            src="Renewable-Logistics.webp"
             alt="Sustainability"
             style={imageStyle}
           />
@@ -96,7 +96,7 @@ const SustainabilityCard = () => {
 
       <section style={sectionStyle}>
         <div style={imageContainerStyle}>
-          <img src="imgleft.png" alt="Complex Shipment" style={imageStyle} />
+          <img src="wind-energy-fleet-transportation-1.webp" alt="Complex Shipment" style={imageStyle} />
         </div>
         <div style={contentStyle}>
           <h2 style={headingStyle}>Complex Shipment Expertise</h2>

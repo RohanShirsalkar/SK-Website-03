@@ -6,88 +6,78 @@ const OurSolutionsSlider = () => {
 
   // Define all cards data
   const allCards = [
-    // Slide 1
     [
       {
-        icon: "/logistics.png",
-        title: "Consulting & Planning",
-        description:
-          "We provide Consulting & Planning for every kind of Wind Energy systems.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/wind-turbine.png",
+        title: "Renewable Energy Logistics",
+        description: "Specialized in wind & solar component transport.",
       },
       {
-        icon: "/logistics.png",
-        title: "Savings on Money",
-        description:
-          "Save money on Spares & Services to increase the value of your production.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/trailer.png",
+        title: "Telescopic Trailer Services",
+        description: "Reliable transport of long & heavy loads.",
       },
       {
-        icon: "/logistics.png",
-        title: "Certified Engineers",
-        description:
-          "Our Experienced Engineers & Staff can handle all kinds of Wind Energy systems.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/crane.png",
+        title: "Tower Trailer Services",
+        description: "Multi-axle trailer transport solutions.",
       },
     ],
+  
     // Slide 2
     [
       {
-        icon: "/logistics.png",
-        title: "Regular Maintenance",
-        description:
-          "Our maintenance services ensure your wind systems operate at peak efficiency.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/tow-truck.png",
+        title: "Crane & Crawler Shifting",
+        description: "Relocation of heavy equipment and cranes.",
       },
       {
-        icon: "/logistics.png",
-        title: "Quality Spare Parts",
-        description:
-          "We supply genuine parts with warranty to keep your systems running reliably.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/gear.png",
+        title: "Puller Axel Services",
+        description: "Heavy-duty transport up to 4200T.",
       },
       {
-        icon: "/logistics.png",
-        title: "24/7 Support",
-        description:
-          "Our technical support team is available round the clock for any emergencies.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/container-truck.png",
+        title: "Soft High-Bed Trailers",
+        description: "Soft 40T, 60ft trailers for cargo movement.",
       },
     ],
+  
     // Slide 3
     [
       {
-        icon: "/logistics.png",
-        title: "Staff Training",
-        description:
-          "We offer comprehensive training programs for your operational staff.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/truck.png",
+        title: "Volvo Puller Transport",
+        description: "High-load transport with multi-axle setups.",
       },
       {
-        icon: "/logistics.png",
-        title: "Remote Monitoring",
-        description:
-          "Advanced monitoring systems to track performance and detect issues early.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/maintenance.png",
+        title: "Machinery & Equipment",
+        description: "Industrial machinery relocations.",
       },
       {
-        icon: "/logistics.png",
-        title: "Sustainability Solutions",
-        description:
-          "Eco-friendly approaches to maximize the environmental benefits of wind energy.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/speed.png",
+        title: "Express Cargo",
+        description: "Fast and secure urgent logistics.",
       },
     ],
+  
     // Slide 4
     [
       {
-        icon: "/logistics.png",
-        title: "Staff Training",
-        description:
-          "We offer comprehensive training programs for your operational staff.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/supply-chain.png",
+        title: "Supply Chain Logistics",
+        description: "End-to-end planning and optimization.",
       },
       {
-        icon: "/logistics.png",
-        title: "Remote Monitoring",
-        description:
-          "Advanced monitoring systems to track performance and detect issues early.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/delivery.png",
+        title: "Freight Transportation",
+        description: "Nationwide reliable delivery network.",
       },
       {
-        icon: "/logistics.png",
-        title: "Sustainability Solutions",
-        description:
-          "Eco-friendly approaches to maximize the environmental benefits of wind energy.",
+        icon: "https://img.icons8.com/ios-filled/50/132577/speed.png",
+        title: "Express Cargo",
+        description: "Fast and secure urgent logistics.",
       },
     ],
   ];
