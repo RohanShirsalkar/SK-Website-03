@@ -20,6 +20,36 @@ const certifications = [
   },
 ];
 
+const aboutUsSlides = [
+  {
+    id: 1,
+    image: "/ship_2.jpeg",
+    title: "Discover Innovation",
+    subtitle: "Transforming ideas into reality",
+    description:
+      "Our cutting-edge solutions drive business growth and innovation across industries.",
+    ctaText: "Learn More",
+  },
+  {
+    id: 2,
+    image: "/truck_02.png",
+    title: "Elevate Your Experience",
+    subtitle: "Premium quality & service",
+    description:
+      "Experience excellence through our meticulously crafted products and personalized service.",
+    ctaText: "View Products",
+  },
+  {
+    id: 3,
+    image: "/ship_2.jpeg",
+    title: "Join Our Community",
+    subtitle: "Connect with like-minded people",
+    description:
+      "Be part of a thriving ecosystem where collaboration fuels success and growth.",
+    ctaText: "Get Started",
+  },
+];
+
 const Card = ({ title, icon, children }) => (
   <div className="bg-white rounded-2xl p-6 shadow-md transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
     <div className="flex flex-col items-start space-y-4">
@@ -33,7 +63,7 @@ const Card = ({ title, icon, children }) => (
 const AboutUs = () => {
   return (
     <div>
-      <HeroSlider />
+      <HeroSlider slides={aboutUsSlides} />
       <section className="bg-blue-900 text-white py-16 px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">

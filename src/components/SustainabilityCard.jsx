@@ -8,11 +8,12 @@ const SustainabilityCard = () => {
     alignItems: "center",
     justifyContent: "space-between",
     backgroundColor: "#fff",
-    border: "1px solid #d3e3f1",
+    border: "3px solid ",
+    borderColor: " #6AB7FF",
     borderRadius: "16px",
     overflow: "hidden",
     margin: "40px 0",
-    boxShadow: "0 0 15px rgba(0, 0, 0, 0.05)",
+    // boxShadow: "0 0 15px rgba(0, 0, 0, 0.05)",
   };
 
   const contentStyle = {
