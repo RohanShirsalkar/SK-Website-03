@@ -36,9 +36,9 @@ const WhyChoseUs = () => {
               <li>Strong Nationwide Coverage</li>
               <li>Competitive Pricing with Quality Service</li>
             </ul>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+            {/* <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
               Get in Touch
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

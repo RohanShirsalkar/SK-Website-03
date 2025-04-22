@@ -11,7 +11,7 @@ const ClientsSection = () => {
 
   const sectionStyle = {
     padding: "60px 0",
-    backgroundColor: "#f8f9fa",
+    // backgroundColor: "#f8f9fa",
   };
 
   const headingStyle = {
@@ -19,13 +19,13 @@ const ClientsSection = () => {
     textAlign: "center",
     marginBottom: "40px",
     fontWeight: "400",
-    fontSize: "36px", 
+    fontSize: "36px",
   };
 
   const rowStyle = {
     display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
+    // justifyContent: "space-evenly",
+    // alignItems: "center",
     flexWrap: "wrap",
     gap: "30px",
     padding: "0 40px",
@@ -51,30 +51,32 @@ const ClientsSection = () => {
   };
 
   return (
-    <section style={sectionStyle} id="clients">
-      <div className="container text-center">
-        <h2 style={headingStyle}>Trusted By</h2>
-        <div style={rowStyle}>
-          {clients.map((client, index) => (
-            <div key={index} style={logoContainerStyle}>
-              <img
-                src={client.logo}
-                alt={client.name}
-                style={logoStyle}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.filter = logoHoverStyle.filter;
-                  e.currentTarget.style.transform = logoHoverStyle.transform;
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.filter = logoStyle.filter;
-                  e.currentTarget.style.transform = "none";
-                }}
-              />
-            </div>
-          ))}
+    <div className="max-w-full mx-auto px-4">
+      <section style={sectionStyle} id="clients">
+        <div className=" text-center">
+          <h2 style={headingStyle}>Trusted By</h2>
+          <div style={rowStyle}>
+            {clients.map((client, index) => (
+              <div key={index} style={logoContainerStyle}>
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  style={logoStyle}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.filter = logoHoverStyle.filter;
+                    e.currentTarget.style.transform = logoHoverStyle.transform;
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.filter = logoStyle.filter;
+                    e.currentTarget.style.transform = "none";
+                  }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
