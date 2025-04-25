@@ -78,11 +78,7 @@ const SustainabilityCard = () => {
           <h2 style={headingStyle}>Sustainability</h2>
           <hr style={lineStyle} />
           <p style={paragraphStyle}>
-            ESG (Environmental, Social, and Governance) principles are
-            redefining the metrics of business success in today’s rapidly
-            evolving world. At NTC, we are devoted to sustainable growth and
-            long-term prosperity, embracing ESG not merely as a strategic
-            decision but as a moral responsibility.
+          At <strong>SK Road Lines & Transport</strong> , sustainability is a core principle that drives their operations. The company is committed to eco-friendly logistics by prioritizing the transportation of renewable energy components such as wind and solar equipment. With a focus on minimizing environmental impact, they strive for zero emissions, responsible fleet management, and greener practices across all operations. This dedication to sustainability aligns with their mission to deliver safe, punctual, and environmentally conscious logistics solutions nationwide.
           </p>
           <Link to="corporate-compliance" style={buttonStyle}>
             Learn More
@@ -105,7 +101,7 @@ const SustainabilityCard = () => {
           <h2 style={headingStyle}>Complex Shipment Expertise</h2>
           <hr style={lineStyle} />
           <p style={paragraphStyle}>
-            At <strong>SK Road Lines</strong>, we specialize in handling complex
+            At <strong>SK Road Lines & Transport</strong>, we specialize in handling complex
             and oversized shipments with complete precision. From staging to
             final stowage, our team meticulously plans and executes each move.
             With survey-backed operations and transparent reporting, we ensure
