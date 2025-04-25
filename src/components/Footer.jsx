@@ -2,7 +2,7 @@ import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-gray-800 text-white border-t border-gray-700">
       {/* Main Footer Content */}
       <div className="px-4 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
         {/* Download Brochure Section */}
