@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
 
   return (
     <nav className="border-b shadow border-gray-200">
@@ -34,7 +34,47 @@ const Navbar = () => {
             >
               Home
             </NavLink>
-            <NavLink
+            <div className="relative group">
+              {/* Dropdown Button */}
+              <button
+                className="py-2 px-3 flex items-center gap-1 hover:bg-gray-200 rounded-md focus:outline-none"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                onBlur={() => setTimeout(() => setIsDropdownOpen(false), 150)}
+              >
+                Who We Are
+                <i
+                  className={`fas fa-chevron-down text-sm transition-transform duration-200 ${
+                    isDropdownOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                ></i>
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute z-50 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-md flex flex-col text-left">
+                  <NavLink
+                    to="/corporate-compliance"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
+                        : "px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Corporate Compliance
+                  </NavLink>
+                  <NavLink
+                    to="/q&ehs"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
+                        : "px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Q&EHS
+                  </NavLink>
+                </div>
+              )}
+            </div>
+            {/* <NavLink
               to="/about-us"
               className={({ isActive }) =>
                 isActive
@@ -63,7 +103,7 @@ const Navbar = () => {
               }
             >
               Q&EHS
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/contact"
@@ -175,7 +215,7 @@ export default Navbar;
                   </NavLink>
                 </div>
               )}
-            </div> */
+            </div> 
 }
 
 {

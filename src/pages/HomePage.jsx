@@ -10,7 +10,7 @@ import WhyChoseUs from "../components/WhyChoseUs";
 const homePageSlides = [
   {
     id: 1,
-    image: "/blank-cargo-truck-road.jpg",
+    image: "/ship_2.jpeg",
     title: "Powering Seamless Logistics",
     subtitle: "Efficiency Delivered",
     description:
@@ -28,7 +28,7 @@ const homePageSlides = [
   },
   {
     id: 3,
-    image: "/ship_2.jpeg",
+    image: "/blank-cargo-truck-road.jpg",
    title: "Your Logistics Partner",
   subtitle: "Always On Time",
   description:

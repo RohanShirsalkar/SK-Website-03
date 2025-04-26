@@ -108,8 +108,7 @@ const OurSolutionsSlider = () => {
       {/* Heading and Subheading */}
       <div className="max-w-6xl mx-auto mb-10 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Offering valuable benefits To Our Customers Through Ongoing Production
-          and Innovation.
+          Our Services
         </h2>
         <p className="text-gray-300 max-w-3xl mx-auto">
           While working on the yield and execution of Wind energy projects, our
