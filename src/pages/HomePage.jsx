@@ -28,19 +28,11 @@ const homePageSlides = [
   },
   {
     id: 3,
-<<<<<<< HEAD
-    image: "/blank-cargo-truck-road.jpg",
-   title: "Your Logistics Partner",
-  subtitle: "Always On Time",
-  description:
-    "We don’t just move cargo—we move confidence, with every shipment arriving exactly as promised.",
-=======
     image: "/ship_2.jpeg",
     title: "Your Logistics Partner",
     subtitle: "Always On Time",
     description:
       "We don’t just move cargo—we move confidence, with every shipment arriving exactly as promised.",
->>>>>>> 17cf1aca1754974f5a1a9b9dc8b65e6c4f2ac7db
     ctaText: "Get Started",
   },
 ];
