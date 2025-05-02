@@ -10,55 +10,55 @@ const OurIndustries = () => {
     },
     {
       title: "Oil and Gas",
-      image: "/tata01.webp",
+      image: "/oil-and-gas.webp",
       description:
         "Optimizing extraction, processing, and distribution while implementing eco-friendly practices for a balanced energy portfolio.",
     },
     {
       title: "Power Transmission & Distribution",
-      image: "/tata01.webp",
+      image: "/Power-Transmission-Distribution.webp",
       description:
         "Building resilient grid infrastructure with smart technologies to ensure reliable power delivery across communities.",
     },
     {
       title: "Engineering & Manufacturing",
-      image: "/tata01.webp",
+      image: "/Engineering-Manufacturing.webp",
       description:
         "Transforming production processes with automation and precision engineering for superior quality and efficiency.",
     },
     {
       title: "Mobility",
-      image: "/tata01.webp",
+      image: "/Mobility-metro.webp",
       description:
         "Revolutionizing transportation networks with integrated solutions that enhance connectivity and reduce environmental impact.",
     },
     {
       title: "Consumer Durables",
-      image: "/tata01.webp",
+      image: "/Consumer-Durables.webp",
       description:
         "Creating long-lasting products that combine functionality, aesthetics, and sustainability for modern households.",
     },
     {
       title: "Auto & Auto Components",
-      image: "/tata01.webp",
+      image: "/auto-1.webp",
       description:
         "Advancing automotive excellence through precision-engineered components and next-generation vehicle technologies.",
     },
     {
       title: "E-Commerce",
-      image: "/tata01.webp",
+      image: "/E-Commerce-1.webp",
       description:
         "Empowering digital retail experiences with innovative platforms that connect consumers with products seamlessly.",
     },
     {
       title: "Pharmaceuticalse",
-      image: "/tata01.webp",
+      image: "/Pharmaceuticals-1.webp",
       description:
         "Innovating healthcare access with smart platforms that ensure safe, efficient, and connected pharmaceutical distribution.",
     },
     {
       title: "FMCG",
-      image: "/tata01.webp",
+      image: "/FMCG-2.webp",
       description:
         "Transforming everyday consumer engagement with agile digital solutions that drive convenience, loyalty, and rapid market reach.",
     },
