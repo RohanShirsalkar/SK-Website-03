@@ -5,8 +5,9 @@ import AboutUs from "../pages/AboutUs";
 import CorporateCompliance from "../pages/CorporateCompliance";
 import Q_EHS from "../pages/Q_EHS";
 import Contact from "../pages/Contact";
-import Gallery from "../pages/Gallery";
-import SolutionsWeOffer from "../pages/ProjectLogistics";
+import OurServices from "../pages/OurServices";
+import RenewableLogistics from "../pages/RenewableLogistics";
+import GeneralTransportation from "../pages/GeneralTransportation";
 
 const router = createBrowserRouter([
   {
@@ -17,9 +18,10 @@ const router = createBrowserRouter([
       { path: "/about-us", element: <AboutUs /> },
       { path: "/corporate-compliance", element: <CorporateCompliance /> },
       { path: "/q&ehs", element: <Q_EHS /> },
-      { path: "/project-logistics", element: <SolutionsWeOffer /> },
+      { path: "/our-services", element: <OurServices /> },
       { path: "/contact", element: <Contact /> },
-      { path: "/gallery", element: <Gallery /> },
+      { path: "/renewable-logistics", element: <RenewableLogistics /> },
+      { path: "/general-transportation", element: <GeneralTransportation /> },
     ],
   },
 ]);
