@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [ setIsWhoWeAreOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -35,11 +37,9 @@ const Navbar = () => {
               Home
             </NavLink>
             <div className="relative group">
-              {/* Dropdown Button */}
               <button
                 className="py-2 px-3 flex items-center gap-1 hover:bg-gray-200 rounded-md focus:outline-none"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                onBlur={() => setTimeout(() => setIsDropdownOpen(false), 150)}
               >
                 Who We Are
                 <i
@@ -53,6 +53,7 @@ const Navbar = () => {
                 <div className="absolute z-50 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-md flex flex-col text-left">
                   <NavLink
                     to="/corporate-compliance"
+                    onClick={() => setIsDropdownOpen(false)} // ✅ Important!
                     className={({ isActive }) =>
                       isActive
                         ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
@@ -61,8 +62,10 @@ const Navbar = () => {
                   >
                     Corporate Compliance
                   </NavLink>
+
                   <NavLink
                     to="/q&ehs"
+                    onClick={() => setIsDropdownOpen(false)} // ✅ Important!
                     className={({ isActive }) =>
                       isActive
                         ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
@@ -74,6 +77,64 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+
+            <div className="relative group">
+              <button
+                className="py-2 px-3 flex items-center gap-1 hover:bg-gray-200 rounded-md focus:outline-none"
+                onClick={() => {
+                  setIsSolutionsOpen(!isSolutionsOpen);
+                  setIsWhoWeAreOpen(false); // close other dropdown
+                }}
+              >
+                Our Solutions
+                <i
+                  className={`fas fa-chevron-down text-sm transition-transform duration-200 ${
+                    isSolutionsOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                ></i>
+              </button>
+
+              {isSolutionsOpen && (
+                <div className="absolute z-50 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-md flex flex-col text-left">
+                  <NavLink
+                    to="/project-logistics"
+                    onClick={() => setIsSolutionsOpen(false)}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
+                        : "px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Project Logistics
+                  </NavLink>
+
+                  <NavLink
+                    to="/contract-logistics"
+                    onClick={() => setIsSolutionsOpen(false)}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
+                        : "px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Contract Logistics
+                  </NavLink>
+
+                  <NavLink
+                    to="/training-academy"
+                    onClick={() => setIsSolutionsOpen(false)}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "px-4 py-2 text-blue-500 font-semibold bg-gray-100"
+                        : "px-4 py-2 hover:bg-gray-100"
+                    }
+                  >
+                    Training Academy
+                  </NavLink>
+                </div>
+              )}
+            </div>
+
             {/* <NavLink
               to="/about-us"
               className={({ isActive }) =>
@@ -104,6 +165,17 @@ const Navbar = () => {
             >
               Q&EHS
             </NavLink> */}
+
+            <NavLink
+              to="/gallery"
+              className={({ isActive }) =>
+                isActive
+                  ? "py-2 px-3 text-blue-500 font-semibold"
+                  : "py-2 px-3 hover:bg-gray-200 rounded-md"
+              }
+            >
+              Gallery
+            </NavLink>
 
             <NavLink
               to="/contact"

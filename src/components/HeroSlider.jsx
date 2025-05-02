@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const HeroSlider = ({ slides = [] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,23 +7,21 @@ const HeroSlider = ({ slides = [] }) => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  // };
 
-  // Auto slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
-  // Indicator click handler
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
+  // const goToSlide = (index) => {
+  //   setCurrentSlide(index);
+  // };
 
   return (
     <div className="relative w-full h-screen sm:h-[800px] overflow-hidden">
@@ -45,7 +42,7 @@ const HeroSlider = ({ slides = [] }) => {
             />
           </div>
 
-          {/* Gradient overlay - darker on left, transparent on right */}
+          {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
 
           {/* Content */}
@@ -61,16 +58,15 @@ const HeroSlider = ({ slides = [] }) => {
                 <p className="text-sm md:text-base mb-8 text-gray-200">
                   {slide.description}
                 </p>
-                {/* <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium transition-colors duration-300">
-                  {slide.ctaText}
-                </button> */}
+                {/* Optional CTA Button */}
               </div>
             </div>
           </div>
         </div>
       ))}
 
-      {/* Navigation arrows */}
+      {/* Navigation arrows - hidden now */}
+      {/* 
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/30 hover:bg-black/50 text-white transition-colors duration-300"
@@ -86,9 +82,10 @@ const HeroSlider = ({ slides = [] }) => {
       >
         <ChevronRight className="h-6 w-6" />
       </button>
+      */}
 
       {/* Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
+      {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -99,7 +96,7 @@ const HeroSlider = ({ slides = [] }) => {
             aria-label={`Go to slide ${index + 1}`}
           ></button>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

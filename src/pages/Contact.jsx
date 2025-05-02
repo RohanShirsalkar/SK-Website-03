@@ -1,10 +1,11 @@
 import React from "react";
-import CTAForm from "../components/CTAForm";
-
+import ContactCard from "../components/ContactCard";
 const Contact = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center bg-gray-100">
-      <CTAForm />
+      {/* <CTAForm /> */}
+      <ContactCard />
+      
     </div>
   );
 };
