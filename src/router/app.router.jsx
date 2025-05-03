@@ -8,6 +8,7 @@ import Contact from "../pages/Contact";
 import OurServices from "../pages/OurServices";
 import RenewableLogistics from "../pages/RenewableLogistics";
 import GeneralTransportation from "../pages/GeneralTransportation";
+import EmployeeSkillTraining from "../pages/EmployeeSkillTraining";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,8 @@ const router = createBrowserRouter([
       { path: "/contact", element: <Contact /> },
       { path: "/renewable-logistics", element: <RenewableLogistics /> },
       { path: "/general-transportation", element: <GeneralTransportation /> },
+      { path: "/employee-training", element: <EmployeeSkillTraining /> },
+
     ],
   },
 ]);

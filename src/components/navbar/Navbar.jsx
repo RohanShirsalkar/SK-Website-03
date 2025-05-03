@@ -16,7 +16,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <img src="/logoNew_croped.png" alt="" className="w-20" />
+            <NavLink to="/">
+              <img
+                src="/logoNew_croped.png"
+                alt="Logo"
+                className="w-20 cursor-pointer"
+              />
+            </NavLink>{" "}
             <h1 className="text-2xl font-semibold">
               SK Road Lines & Transport
             </h1>
@@ -64,9 +70,9 @@ const Navbar = () => {
                   path: "/general-transportation",
                 },
                 {
-                  value: "renewable-logistics",
-                  label: "Renewable Logistics",
-                  path: "/renewable-logistics",
+                  value: "employee-training",
+                  label: "Employability Skill Training",
+                  path: "/employee-training",
                 },
               ]}
             />
