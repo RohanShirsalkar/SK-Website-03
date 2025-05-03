@@ -9,6 +9,7 @@ import OurServices from "../pages/OurServices";
 import RenewableLogistics from "../pages/RenewableLogistics";
 import GeneralTransportation from "../pages/GeneralTransportation";
 import EmployeeSkillTraining from "../pages/EmployeeSkillTraining";
+import Gallery from "../pages/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/q&ehs", element: <Q_EHS /> },
       { path: "/our-services", element: <OurServices /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/gallery", element: <Gallery /> },
       { path: "/renewable-logistics", element: <RenewableLogistics /> },
       { path: "/general-transportation", element: <GeneralTransportation /> },
       { path: "/employee-training", element: <EmployeeSkillTraining /> },
