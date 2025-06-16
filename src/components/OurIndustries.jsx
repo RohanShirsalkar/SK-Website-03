@@ -3,65 +3,60 @@ import React from "react";
 const OurIndustries = () => {
   const industries = [
     {
-      title: "Renewable Energy - Wind & Solar",
-      image: "/tata01.webp",
+      title: "Heavy & Specialised Transport",
+      image: "/heavy.jpg",
       description:
         "Pioneering sustainable solutions through wind and solar technologies to drive the global transition to clean energy.",
     },
     {
-      title: "Oil and Gas",
-      image: "/oil-and-gas.webp",
+      title: "Wind Energy Transport",
+      image: "/Power-Transmission-Distribution.webp",
       description:
         "Optimizing extraction, processing, and distribution while implementing eco-friendly practices for a balanced energy portfolio.",
     },
     {
-      title: "Power Transmission & Distribution",
-      image: "/Power-Transmission-Distribution.webp",
+      title: "Multimodal Transport",
+            image: "/inhouse.jpg",
+
       description:
         "Building resilient grid infrastructure with smart technologies to ensure reliable power delivery across communities.",
     },
     {
-      title: "Engineering & Manufacturing",
+      title: "Project Forwarding",
       image: "/Engineering-Manufacturing.webp",
       description:
         "Transforming production processes with automation and precision engineering for superior quality and efficiency.",
     },
     {
-      title: "Mobility",
-      image: "/Mobility-metro.webp",
+      title: "Freight Forwarding",
+      image: "/flight.jpg",
       description:
         "Revolutionizing transportation networks with integrated solutions that enhance connectivity and reduce environmental impact.",
     },
     {
-      title: "Consumer Durables",
-      image: "/Consumer-Durables.webp",
+      title: "Inhouse Custom Clearance",
+      image: "/oil-and-gas.webp",
       description:
         "Creating long-lasting products that combine functionality, aesthetics, and sustainability for modern households.",
     },
     {
-      title: "Auto & Auto Components",
+      title: "Technical Advisory for Route Survey",
       image: "/auto-1.webp",
       description:
         "Advancing automotive excellence through precision-engineered components and next-generation vehicle technologies.",
     },
     {
-      title: "E-Commerce",
-      image: "/E-Commerce-1.webp",
+      title: "Warehousing",
+      image: "/warhouseImg.jpg",
       description:
         "Empowering digital retail experiences with innovative platforms that connect consumers with products seamlessly.",
     },
     {
-      title: "Pharmaceuticalse",
-      image: "/Pharmaceuticals-1.webp",
+      title: "Breakbulk Chartering",
+      image: "/bulk.jpg",
       description:
         "Innovating healthcare access with smart platforms that ensure safe, efficient, and connected pharmaceutical distribution.",
-    },
-    {
-      title: "FMCG",
-      image: "/FMCG-2.webp",
-      description:
-        "Transforming everyday consumer engagement with agile digital solutions that drive convenience, loyalty, and rapid market reach.",
-    },
+    }
   ];
   return (
     <div className="py-12 px-4">
