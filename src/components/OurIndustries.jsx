@@ -4,7 +4,7 @@ const OurIndustries = () => {
   const industries = [
     {
       title: "Heavy & Specialised Transport",
-      image: "/img15.jpeg",
+      image: "/img16.jpeg",
       description:
         "Pioneering sustainable solutions through wind and solar technologies to drive the global transition to clean energy.",
     },
