@@ -15,18 +15,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <NavLink to="/">
-              <img
-                src="/logoNew_croped.png"
-                alt="Logo"
-                className="w-20 cursor-pointer"
-              />
-            </NavLink>{" "}
-            <h1 className="text-2xl font-semibold">
-              SK Road Lines & Transport
-            </h1>
-          </div>
+      <div className="flex items-center gap-4">
+      <NavLink to="/">
+        <img
+          src="/logoNew_croped.png" // Make sure this path is correct
+          alt="Logo"
+          className="w-20 cursor-pointer"
+        />
+      </NavLink>
+      <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 drop-shadow">
+        SK Road Lines & Transport
+      </h1>
+    </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
