@@ -23,7 +23,7 @@ const Navbar = () => {
           className="w-20 cursor-pointer"
         />
       </NavLink>
-      <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 drop-shadow">
+      <h1 className="text-2xl font-semibold text-black">
         SK Road Lines & Transport
       </h1>
     </div>
