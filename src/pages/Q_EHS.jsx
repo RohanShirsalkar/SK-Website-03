@@ -76,36 +76,45 @@ const Q_EHS = () => {
   return (
     <div className="min-h-screen">
       {/* <HeroBanner /> */}
-      <div className="max-w-6xl mx-auto">
-      <section style={sectionStyle}>
-        <div style={contentStyle}>
-          <h2 style={headingStyle}>Our Vision for Quality and Safety</h2>
-          <hr style={lineStyle} />
-          <p style={paragraphStyle}>
-          We aim to establish a strong culture of quality and safety throughout our organization by aligning all core and support functions with the structure and discipline of an ISO-based Quality and Environmental Health & Safety (EHS) framework. Our Q&EHS team plays a vital role in upholding these standards by managing enterprise-wide systems and ensuring strict adherence to Integrated Management System (IMS) protocols. </p>
-        </div>
-        <div style={imageContainerStyle}>
-          <img
-            src="QEHS-3-1.webp"
-            alt="Sustainability"
-            style={imageStyle}
-          />
-        </div>
-      </section>
+      <div className="max-w-6xl mx-2 md:mx-auto">
+        <section style={sectionStyle}>
+          <div style={contentStyle}>
+            <h2 style={headingStyle}>Our Vision for Quality and Safety</h2>
+            <hr style={lineStyle} />
+            <p style={paragraphStyle}>
+              We aim to establish a strong culture of quality and safety
+              throughout our organization by aligning all core and support
+              functions with the structure and discipline of an ISO-based
+              Quality and Environmental Health & Safety (EHS) framework. Our
+              Q&EHS team plays a vital role in upholding these standards by
+              managing enterprise-wide systems and ensuring strict adherence to
+              Integrated Management System (IMS) protocols.{" "}
+            </p>
+          </div>
+          <div style={imageContainerStyle}>
+            <img src="QEHS-3-1.webp" alt="Sustainability" style={imageStyle} />
+          </div>
+        </section>
 
-      <section style={sectionStyle}>
-        <div style={imageContainerStyle}>
-          <img src="QEHS-3.webp" alt="Complex Shipment" style={imageStyle} />
-        </div>
-        <div style={contentStyle}>
-          <h2 style={headingStyle}>Auditing and Process Standardization</h2>
-          <hr style={lineStyle} />
-          <p style={paragraphStyle}>
-          We conduct regular internal audits to ensure alignment with quality, environmental, and occupational health & safety standards. Using our custom-developed Q&EHS Audit Tool, we perform consistent and standardized evaluations across all departments. When required, we implement corrective and preventive actions promptly to strengthen and enhance our safety and quality management systems.          </p>
-         
-        </div>
-      </section>
-    </div>
+        <section style={sectionStyle}>
+          <div style={imageContainerStyle}>
+            <img src="QEHS-3.webp" alt="Complex Shipment" style={imageStyle} />
+          </div>
+          <div style={contentStyle}>
+            <h2 style={headingStyle}>Auditing and Process Standardization</h2>
+            <hr style={lineStyle} />
+            <p style={paragraphStyle}>
+              We conduct regular internal audits to ensure alignment with
+              quality, environmental, and occupational health & safety
+              standards. Using our custom-developed Q&EHS Audit Tool, we perform
+              consistent and standardized evaluations across all departments.
+              When required, we implement corrective and preventive actions
+              promptly to strengthen and enhance our safety and quality
+              management systems.{" "}
+            </p>
+          </div>
+        </section>
+      </div>
       <div className="max-w-7xl mx-auto px-4 ">
         <Acordion items={accordionItems} title={"FAQ"} />
       </div>
