@@ -118,7 +118,7 @@ const Footer = () => {
           <div className="text-sm text-gray-400 mb-4 md:mb-0">
             Copyright © 2025 SK Roadlines and Transport. All Rights Reserved.
           </div>
-          
+
           <div className="flex flex-col md:flex-row items-center">
             <div className="flex space-x-4 mb-4 md:mb-0 md:mr-8">
               <a
@@ -135,32 +135,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
-            </div>
+           
           </div>
         </div>
       </div>
