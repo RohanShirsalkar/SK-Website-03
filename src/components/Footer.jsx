@@ -116,9 +116,9 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-gray-400 mb-4 md:mb-0">
-            Copyright © 2025 NTC. All Rights Reserved KP Webtech.
+            Copyright © 2025 SK Roadlines and Transport. All Rights Reserved.
           </div>
-
+          
           <div className="flex flex-col md:flex-row items-center">
             <div className="flex space-x-4 mb-4 md:mb-0 md:mr-8">
               <a
