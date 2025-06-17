@@ -14,9 +14,9 @@ const EmployeeSkillTraining = () => {
         subHeading={"Building Tomorrow's Leaders in Logistics Excellence"}
         imagePath={"/truck_03.jpg"}
       />
-      <div className="max-w-3xl mx-auto py-[80px]">
+      <div className="max-w-3xl px-4 mx-auto py-[80px]">
         <h1 className="text-4xl text-gray-800 font-semibold text-center mb-4">
-        Employability Skills Training
+          Employability Skills Training
         </h1>
         <div className="w-[300px] mx-auto mb-3">
           <GradientDivider />

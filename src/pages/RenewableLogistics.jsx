@@ -14,7 +14,7 @@ const RenewableLogistics = () => {
         subHeading={"Fueling Your Green Ambitions with Cutting-Edge Solutions"}
         imagePath={"/truck_03.jpg"}
       />
-      <div className="max-w-3xl mx-auto py-[80px]">
+      <div className="max-w-3xl px-4 md:mx-auto py-[80px]">
         <h1 className="text-4xl text-gray-800 font-semibold text-center mb-4">
           Renewable Logistics
         </h1>

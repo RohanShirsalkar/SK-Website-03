@@ -37,6 +37,7 @@ const CorporateCompliance = () => {
     borderRadius: "16px",
     overflow: "hidden",
     margin: "40px 0",
+    padding: "10px",
     // boxShadow: "0 0 15px rgba(0, 0, 0, 0.05)",
   };
 
@@ -84,37 +85,52 @@ const CorporateCompliance = () => {
   return (
     <div className="min-h-screen">
       {/* <HeroBanner /> */}
-      <div className="max-w-6xl mx-auto">
-      <section style={sectionStyle}>
-        <div style={contentStyle}>
-          <h2 style={headingStyle}>Commitment to Corporate Governance and Compliance</h2>
-          <hr style={lineStyle} />
-          <p style={paragraphStyle}>
-          We are dedicated to maintaining the highest standards of corporate governance and compliance by following a strong framework of ethical values and regulatory guidelines. Our well-established compliance system ensures transparency, accountability, and the integration of sustainable practices throughout every level of our organization. </p>
-        </div>
-        <div style={imageContainerStyle}>
-          <img
-            src="compliance.webp"
-            alt="Sustainability"
-            style={imageStyle}
-          />
-        </div>
-      </section>
+      <div className="max-w-6xl mx-2 md:mx-auto">
+        <section style={sectionStyle}>
+          <div style={contentStyle}>
+            <h2 style={headingStyle}>
+              Commitment to Corporate Governance and Compliance
+            </h2>
+            <hr style={lineStyle} />
+            <p style={paragraphStyle}>
+              We are dedicated to maintaining the highest standards of corporate
+              governance and compliance by following a strong framework of
+              ethical values and regulatory guidelines. Our well-established
+              compliance system ensures transparency, accountability, and the
+              integration of sustainable practices throughout every level of our
+              organization.{" "}
+            </p>
+          </div>
+          <div style={imageContainerStyle}>
+            <img
+              src="compliance.webp"
+              alt="Sustainability"
+              style={imageStyle}
+            />
+          </div>
+        </section>
 
-      <section style={sectionStyle}>
-        <div style={imageContainerStyle}>
-          <img src="integrity-honesty.webp" alt="Complex Shipment" style={imageStyle} />
-        </div>
-        <div style={contentStyle}>
-          <h2 style={headingStyle}>Integrity at the Core</h2>
-          <hr style={lineStyle} />
-          <p style={paragraphStyle}>
-          We are firmly committed to integrity and ethical conduct, which guide our internal policies and shape our relationships with clients, partners, and stakeholders. Adhering to local and international laws, industry standards, and governance principles is central to our approach to responsible and sustainable growth.
-          </p>
-         
-        </div>
-      </section>
-    </div>
+        <section style={sectionStyle}>
+          <div style={imageContainerStyle}>
+            <img
+              src="integrity-honesty.webp"
+              alt="Complex Shipment"
+              style={imageStyle}
+            />
+          </div>
+          <div style={contentStyle}>
+            <h2 style={headingStyle}>Integrity at the Core</h2>
+            <hr style={lineStyle} />
+            <p style={paragraphStyle}>
+              We are firmly committed to integrity and ethical conduct, which
+              guide our internal policies and shape our relationships with
+              clients, partners, and stakeholders. Adhering to local and
+              international laws, industry standards, and governance principles
+              is central to our approach to responsible and sustainable growth.
+            </p>
+          </div>
+        </section>
+      </div>
       <div className="max-w-7xl mx-auto px-4 ">
         <Acordion items={accordionItems} title={"FAQ"} />
       </div>

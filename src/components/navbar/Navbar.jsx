@@ -131,10 +131,43 @@ const Navbar = () => {
               Home
             </NavLink>
             <div className="mb-2 mt-2">
-              <NavDropdown />
+              <NavDropdown
+                placeholder="Who We Are"
+                options={[
+                  {
+                    value: "corporate-compliance",
+                    label: "Corporate Compliance",
+                    path: "/corporate-compliance",
+                  },
+                  {
+                    value: "q&ehs",
+                    label: "Q&EHS",
+                    path: "/q&ehs",
+                  },
+                ]}
+              />
             </div>
             <div className="mb-2">
-              <NavDropdown />
+              <NavDropdown
+                placeholder="Our Solutions"
+                options={[
+                  {
+                    value: "renewable-logistics",
+                    label: "Renewable Logistics",
+                    path: "/renewable-logistics",
+                  },
+                  {
+                    value: "general-transportation",
+                    label: "General Transportation",
+                    path: "/general-transportation",
+                  },
+                  {
+                    value: "employee-training",
+                    label: "Employability Skill Training",
+                    path: "/employee-training",
+                  },
+                ]}
+              />
             </div>
             <NavLink
               to="/contact"

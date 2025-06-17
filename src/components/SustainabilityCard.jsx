@@ -72,13 +72,21 @@ const SustainabilityCard = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-2 md:mx-auto">
       <section style={sectionStyle}>
         <div style={contentStyle}>
           <h2 style={headingStyle}>Sustainability</h2>
           <hr style={lineStyle} />
           <p style={paragraphStyle}>
-          At <strong>SK Road Lines & Transport</strong> , sustainability is a core principle that drives their operations. The company is committed to eco-friendly logistics by prioritizing the transportation of renewable energy components such as wind and solar equipment. With a focus on minimizing environmental impact, they strive for zero emissions, responsible fleet management, and greener practices across all operations. This dedication to sustainability aligns with their mission to deliver safe, punctual, and environmentally conscious logistics solutions nationwide.
+            At <strong>SK Road Lines & Transport</strong> , sustainability is a
+            core principle that drives their operations. The company is
+            committed to eco-friendly logistics by prioritizing the
+            transportation of renewable energy components such as wind and solar
+            equipment. With a focus on minimizing environmental impact, they
+            strive for zero emissions, responsible fleet management, and greener
+            practices across all operations. This dedication to sustainability
+            aligns with their mission to deliver safe, punctual, and
+            environmentally conscious logistics solutions nationwide.
           </p>
           <Link to="corporate-compliance" style={buttonStyle}>
             Learn More
@@ -95,17 +103,22 @@ const SustainabilityCard = () => {
 
       <section style={sectionStyle}>
         <div style={imageContainerStyle}>
-          <img src="wind-energy-fleet-transportation-1.webp" alt="Complex Shipment" style={imageStyle} />
+          <img
+            src="wind-energy-fleet-transportation-1.webp"
+            alt="Complex Shipment"
+            style={imageStyle}
+          />
         </div>
         <div style={contentStyle}>
           <h2 style={headingStyle}>Complex Shipment Expertise</h2>
           <hr style={lineStyle} />
           <p style={paragraphStyle}>
-            At <strong>SK Road Lines & Transport</strong>, we specialize in handling complex
-            and oversized shipments with complete precision. From staging to
-            final stowage, our team meticulously plans and executes each move.
-            With survey-backed operations and transparent reporting, we ensure
-            reliable, safe, and seamless delivery—every time.
+            At <strong>SK Road Lines & Transport</strong>, we specialize in
+            handling complex and oversized shipments with complete precision.
+            From staging to final stowage, our team meticulously plans and
+            executes each move. With survey-backed operations and transparent
+            reporting, we ensure reliable, safe, and seamless delivery—every
+            time.
           </p>
           <Link to="q&ehs" style={buttonStyle}>
             Learn More

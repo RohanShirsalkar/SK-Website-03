@@ -17,7 +17,7 @@ const GeneralTransportation = () => {
         }
         imagePath={"/truck_03.jpg"}
       />
-      <div className="max-w-3xl mx-auto py-[80px]">
+      <div className="max-w-3xl px-4 mx-auto py-[80px]">
         <h1 className="text-4xl text-gray-800 font-semibold text-center mb-4">
           General Transportation
         </h1>
