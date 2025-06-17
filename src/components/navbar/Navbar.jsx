@@ -45,6 +45,11 @@ const Navbar = () => {
               placeholder="Who We Are"
               options={[
                 {
+                  value: "about-us",
+                  label: "About Us",
+                  path: "/about-us",
+                },
+                {
                   value: "corporate-compliance",
                   label: "Corporate Compliance",
                   path: "/corporate-compliance",
@@ -53,11 +58,6 @@ const Navbar = () => {
                   value: "q&ehs",
                   label: "Q&EHS",
                   path: "/q&ehs",
-                },
-                {
-                  value: "about-us",
-                  label: "About Us",
-                  path: "/about-us",
                 },
               ]}
             />
@@ -141,6 +141,11 @@ const Navbar = () => {
                 placeholder="Who We Are"
                 options={[
                   {
+                    value: "about-us",
+                    label: "About Us",
+                    path: "/about-us",
+                  },
+                  {
                     value: "corporate-compliance",
                     label: "Corporate Compliance",
                     path: "/corporate-compliance",
@@ -149,11 +154,6 @@ const Navbar = () => {
                     value: "q&ehs",
                     label: "Q&EHS",
                     path: "/q&ehs",
-                  },
-                  {
-                    value: "about-us",
-                    label: "About Us",
-                    path: "/about-us",
                   },
                 ]}
               />
