@@ -15,18 +15,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-      <div className="flex items-center gap-4">
-      <NavLink to="/">
-        <img
-          src="/logoNew_croped.png" // Make sure this path is correct
-          alt="Logo"
-          className="w-20 cursor-pointer"
-        />
-      </NavLink>
-      <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 drop-shadow">
-        SK Road Lines & Transport
-      </h1>
-    </div>
+          <div className="flex items-center gap-4">
+            <NavLink to="/">
+              <img
+                src="/logoNew_croped.png" // Make sure this path is correct
+                alt="Logo"
+                className="w-20 cursor-pointer"
+              />
+            </NavLink>
+            <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 drop-shadow">
+              SK Road Lines & Transport
+            </h1>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
@@ -53,6 +53,11 @@ const Navbar = () => {
                   value: "q&ehs",
                   label: "Q&EHS",
                   path: "/q&ehs",
+                },
+                {
+                  value: "about-us",
+                  label: "About Us",
+                  path: "/about-us",
                 },
               ]}
             />
@@ -119,7 +124,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-4 pt-2 pb-3">
+          <div className="px-4 pt-2 pb-3 flex flex-col">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -130,6 +135,7 @@ const Navbar = () => {
             >
               Home
             </NavLink>
+
             <div className="mb-2 mt-2">
               <NavDropdown
                 placeholder="Who We Are"
@@ -143,6 +149,11 @@ const Navbar = () => {
                     value: "q&ehs",
                     label: "Q&EHS",
                     path: "/q&ehs",
+                  },
+                  {
+                    value: "about-us",
+                    label: "About Us",
+                    path: "/about-us",
                   },
                 ]}
               />
@@ -169,6 +180,7 @@ const Navbar = () => {
                 ]}
               />
             </div>
+
             <NavLink
               to="/contact"
               className={({ isActive }) =>
@@ -178,6 +190,16 @@ const Navbar = () => {
               }
             >
               Contact
+            </NavLink>
+            <NavLink
+              to="/gallery"
+              className={({ isActive }) =>
+                isActive
+                  ? "  text-blue-500 font-semibold mt-2"
+                  : "  hover:bg-gray-200 rounded-md mt-2"
+              }
+            >
+              Gallery
             </NavLink>
           </div>
         </div>
