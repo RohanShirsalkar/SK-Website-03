@@ -53,7 +53,7 @@ const OurIndustries = () => {
     },
     {
       title: "Breakbulk Chartering",
-      image: "/catering.jpeg",
+      image: "/img5.jpeg",
       description:
         "Innovating healthcare access with smart platforms that ensure safe, efficient, and connected pharmaceutical distribution.",
     }
