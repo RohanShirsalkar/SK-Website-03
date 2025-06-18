@@ -4,7 +4,7 @@ const OurIndustries = () => {
   const industries = [
     {
       title: "Heavy & Specialised Transport",
-      image: "/img16.jpeg",
+      image: "/Project-Cargo-Services.jpg",
       description:
         "Pioneering sustainable solutions through wind and solar technologies to drive the global transition to clean energy.",
     },
@@ -53,7 +53,7 @@ const OurIndustries = () => {
     },
     {
       title: "Breakbulk Chartering",
-      image: "/img5.jpeg",
+      image: "/catering.jpeg",
       description:
         "Innovating healthcare access with smart platforms that ensure safe, efficient, and connected pharmaceutical distribution.",
     }
