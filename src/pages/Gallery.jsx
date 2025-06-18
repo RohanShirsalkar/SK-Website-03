@@ -3,7 +3,6 @@ import React from 'react';
 const Gallery = () => {
   const images = [
     { src: 'img1.jpeg', name: 'Truck 1' },
-    { src: 'img2.jpeg', name: 'Truck 2' },
     { src: 'img3.jpeg', name: 'Truck 3' },
     { src: 'img4.jpeg', name: 'Truck 4' },
     { src: 'img5.jpeg', name: 'Truck 5' },
