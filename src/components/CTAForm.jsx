@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const CTAForm = () => {
+  const formRef = useRef(); // <-- for EmailJS to reference the form
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -19,17 +22,38 @@ const CTAForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would handle the form submission, such as sending the data to an API
-    console.log("Form submitted:", formData);
-    // Reset form after submission if needed
-    // setFormData({ fullName: '', email: '', jobTitle: '', company: '', areaOfInterest: '' });
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",      // replace with your service ID
+        "YOUR_TEMPLATE_ID",     // replace with your template ID
+        formRef.current,
+        "YOUR_PUBLIC_KEY"       // replace with your public key
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+          alert("Thanks! We'll get back to you shortly.");
+          // Optionally reset form
+          setFormData({
+            fullName: "",
+            email: "",
+            jobTitle: "",
+            company: "",
+            areaOfInterest: "",
+          });
+        },
+        (error) => {
+          console.error("Email send failed:", error.text);
+          alert("Something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
     <div className="bg-transparent py-16 px-4">
       <div className="max-w-6xl mx-auto bg-white border border-gray-200 p-6 md:p-12 shadow-lg rounded-lg">
         <div className="flex flex-col sm:flex-row gap-8 items-center">
-          {/* Image Section - Now on left */}
           <div className="w-full md:w-1/2">
             <img
               src="start-the-conversation.webp"
@@ -38,7 +62,6 @@ const CTAForm = () => {
             />
           </div>
 
-          {/* Form Section - Now on right */}
           <div className="w-full md:w-1/2 text-gray-800">
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
               Start the Conversation
@@ -48,31 +71,28 @@ const CTAForm = () => {
               promptly to discuss your logistics needs.
             </p>
 
-            <form onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={handleSubmit}>
               <div className="space-y-4">
-                {/* Full Name */}
                 <input
                   type="text"
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Full Name"
-                  className="w-full px-4 py-3 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
                   required
+                  className="w-full px-4 py-3 rounded border border-gray-300"
                 />
 
-                {/* Email */}
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email Address"
-                  className="w-full px-4 py-3 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
                   required
+                  className="w-full px-4 py-3 rounded border border-gray-300"
                 />
 
-                {/* Job Title and Company - Side by Side */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
                     type="text"
@@ -80,25 +100,23 @@ const CTAForm = () => {
                     value={formData.jobTitle}
                     onChange={handleChange}
                     placeholder="Job Title"
-                    className="w-full px-4 py-3 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
+                    className="w-full px-4 py-3 rounded border border-gray-300"
                   />
-
                   <input
                     type="text"
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Company"
-                    className="w-full px-4 py-3 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
+                    className="w-full px-4 py-3 rounded border border-gray-300"
                   />
                 </div>
 
-                {/* Area of Interest Dropdown */}
                 <select
                   name="areaOfInterest"
                   value={formData.areaOfInterest}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition appearance-none bg-white"
+                  className="w-full px-4 py-3 rounded border border-gray-300 bg-white"
                 >
                   <option value="">Select The Area Of Interest</option>
                   <option value="logistics">Logistics</option>
@@ -108,11 +126,10 @@ const CTAForm = () => {
                   <option value="customs">Customs Clearance</option>
                 </select>
 
-                {/* Submit Button */}
                 <div className="mt-6">
                   <button
                     type="submit"
-                    className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-8 rounded transition-colors duration-300"
+                    className="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-8 rounded"
                   >
                     CONTACT US
                   </button>
