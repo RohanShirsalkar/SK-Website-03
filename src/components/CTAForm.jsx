@@ -25,10 +25,10 @@ const CTAForm = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",      // replace with your service ID
-        "YOUR_TEMPLATE_ID",     // replace with your template ID
+        "service_0syo2ar",      // replace with your service ID
+        "template_318dmgg",     // replace with your template ID
         formRef.current,
-        "YOUR_PUBLIC_KEY"       // replace with your public key
+        "cI9xakBiecKYk1ZMl"       // replace with your public key
       )
       .then(
         (result) => {
