@@ -61,7 +61,7 @@ const Footer = () => {
               href="mailto:enquiry@ntcgroup.in"
               className="text-sm hover:text-blue-400 transition-colors"
             >
-              SKRoadlines060@gmail.com
+              skroadlines060@gmail.com
             </a>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Footer = () => {
               href="mailto:enquiry@ntcgroup.in"
               className="text-sm hover:text-blue-400 transition-colors"
             >
-              SKRoadlines060@gmail.com
+              skroadlines060@gmail.com
             </a>
           </div>
         </div>
