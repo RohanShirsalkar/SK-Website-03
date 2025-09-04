@@ -101,17 +101,13 @@ const Footer = () => {
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
             </div>
-            <a
-              href="mailto:skroadlines060@gmail.com"
-              className="text-sm hover:text-blue-400 transition-colors">
-              skroadlines060@gmail.com
-            </a><a
-  href="mailto:skroadlines060@gmail.com"
+           <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=skroadlines060@gmail.com"
+  target="_blank"
   className="text-sm hover:text-blue-400 transition-colors"
 >
   skroadlines060@gmail.com
 </a>
-
 
           </div>
         </div>
