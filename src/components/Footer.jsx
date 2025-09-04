@@ -58,9 +58,8 @@ const Footer = () => {
               </svg>
             </div>
             <a
-              href="skroadlines060@gmail.com"
-              className="text-sm hover:text-blue-400 transition-colors"
-            >
+              href="mailto:skroadlines060@gmail.com"
+              className="text-sm hover:text-blue-400 transition-colors">
               skroadlines060@gmail.com
             </a>
           </div>
@@ -103,11 +102,17 @@ const Footer = () => {
               </svg>
             </div>
             <a
-              href="skroadlines060@gmail.com"
-              className="text-sm hover:text-blue-400 transition-colors"
-            >
+              href="mailto:skroadlines060@gmail.com"
+              className="text-sm hover:text-blue-400 transition-colors">
               skroadlines060@gmail.com
-            </a>
+            </a><a
+  href="mailto:skroadlines060@gmail.com"
+  className="text-sm hover:text-blue-400 transition-colors"
+>
+  skroadlines060@gmail.com
+</a>
+
+
           </div>
         </div>
       </div>
@@ -135,7 +140,7 @@ const Footer = () => {
               </a>
             </div>
 
-           
+
           </div>
         </div>
       </div>
