@@ -125,7 +125,7 @@ const Footer = () => {
                 href="#"
                 className="text-sm text-gray-400 hover:text-white transition-colors"
               >
-                Privacy Policyy
+                Privacy Policyyy
               </a>
             </div>
 
